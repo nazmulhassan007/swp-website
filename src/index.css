@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #C9A84C;
+  --dark-bg: #1a1a1a;
+  --card-bg: #242424;
+  --border: #333;
+  --text-muted: #999;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--dark-bg);
+  color: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  text-align: left;
+}
