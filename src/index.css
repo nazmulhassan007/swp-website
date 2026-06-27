@@ -5,38 +5,30 @@
 }
 
 :root {
-  --gold: #C9A84C;
-  --dark-bg: #1a1a1a;
-  --card-bg: #242424;
-  --border: #333;
-  --text-muted: #999;
-  --white: #ffffff;
+  --gold:     #CC9933;
+  --dark-bg:  #0d0d0d;
+  --card-bg:  #16140E;
+  --border:   #3D3D3D;
+  --text-primary: #FCF9F3;
+  --text-secondary: #F7F7F8;
+  --text-body: #F5F5F5;
+  --text-muted: #9E9E9E;
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif;
   background: var(--dark-bg);
-  color: var(--white);
-  line-height: 1.6;
+  color: var(--text-primary);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
 
 #root {
   width: 100%;
   min-height: 100vh;
-  text-align: left;
+  overflow-x: hidden;
 }

@@ -1,44 +1,45 @@
 import './BlogHero.css';
+import heroBg from '../assets/hero-bg.jpg';
+import avatar from '../assets/avatar.png';
+import iconHome from '../assets/icon-home.svg';
 
 export default function BlogHero() {
   return (
-    <div className="blog-hero">
+    <section className="blog-hero">
       <div className="blog-hero__inner">
+        {/* Breadcrumb */}
         <nav className="breadcrumb">
-          <a href="#">Home</a>
+          <img src={iconHome} alt="" className="breadcrumb__home-icon" />
+          <span className="breadcrumb__item breadcrumb__item--muted">Home</span>
+          <span className="breadcrumb__sep breadcrumb__sep--muted">/</span>
+          <span className="breadcrumb__item breadcrumb__item--muted">Blogs</span>
           <span className="breadcrumb__sep">/</span>
-          <a href="#">Blogs</a>
-          <span className="breadcrumb__sep">/</span>
-          <span className="breadcrumb__current">Blogs Details Page</span>
+          <span className="breadcrumb__item">Blogs Details Page</span>
         </nav>
 
+        {/* Title */}
         <h1 className="blog-hero__title">
           That&rsquo;s A Wrap! The Best Of Out{' '}
-          <em className="blog-hero__title--gold">Travel</em>
-          <br />
-          <em className="blog-hero__title--gold">The System 2024</em>
+          <em className="blog-hero__title--playball">Travel The System 2024</em>
         </h1>
 
+        {/* Meta */}
         <div className="blog-hero__meta">
-          <div className="blog-hero__avatar">
-            <img
-              src="https://i.pravatar.cc/36?img=12"
-              alt="James Olive"
-            />
+          <div className="blog-hero__author-wrap">
+            <img src={avatar} alt="James Olive" className="blog-hero__avatar" />
+            <span className="blog-hero__author-name">James Olive</span>
           </div>
-          <span className="blog-hero__author">James Olive</span>
-          <span className="blog-hero__dot">•</span>
-          <span className="blog-hero__date">July 16, 2026</span>
+          <div className="blog-hero__date-wrap">
+            <span className="blog-hero__date">July 16, 2026</span>
+          </div>
         </div>
 
-        <div className="blog-hero__image-wrap">
-          <img
-            src="https://picsum.photos/seed/london-buildings/1100/500"
-            alt="Featured blog image"
-            className="blog-hero__image"
-          />
+        {/* Hero image */}
+        <div className="blog-hero__img-wrap">
+          <img src={heroBg} alt="Blog hero" className="blog-hero__img" />
+          <div className="blog-hero__img-overlay" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
