@@ -1,48 +1,7 @@
 import './Navbar.css';
+import logo from '../assets/logo.svg';
 
 const NAV_LINKS = ['Home', 'About us', 'Services', "FAQ's", 'Contact'];
-
-function SWPLogo() {
-  return (
-    <svg
-      className="navbar__logo-svg"
-      viewBox="0 0 110 70"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Outer oval border */}
-      <ellipse cx="55" cy="35" rx="52" ry="32" fill="none" stroke="#C9A84C" strokeWidth="2" />
-
-      {/* Curved "SNOW WHITE" text along top arc */}
-      <path id="topArc" d="M 12,35 A 43,28 0 0,1 98,35" fill="none" />
-      <text fontSize="7" fill="#C9A84C" fontWeight="700" letterSpacing="1.5">
-        <textPath href="#topArc" startOffset="10%">SNOW WHITE</textPath>
-      </text>
-
-      {/* Inner oval behind SWP */}
-      <ellipse cx="55" cy="36" rx="26" ry="14" fill="none" stroke="#C9A84C" strokeWidth="1.2" />
-
-      {/* SWP text */}
-      <text
-        x="55"
-        y="41"
-        textAnchor="middle"
-        fontSize="18"
-        fontWeight="900"
-        fill="#C9A84C"
-        fontFamily="Arial, sans-serif"
-        letterSpacing="1"
-      >
-        SWP
-      </text>
-
-      {/* Curved "MANAGEMENT" text along bottom arc */}
-      <path id="bottomArc" d="M 12,35 A 43,28 0 0,0 98,35" fill="none" />
-      <text fontSize="6" fill="#C9A84C" fontWeight="700" letterSpacing="1.2">
-        <textPath href="#bottomArc" startOffset="8%">MANAGEMENT</textPath>
-      </text>
-    </svg>
-  );
-}
 
 function ArrowRightIcon() {
   return (
@@ -66,7 +25,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__inner">
         <a href="/" className="navbar__logo">
-          <SWPLogo />
+          <img src={logo} alt="Snow White Management" className="navbar__logo-img" />
         </a>
 
         <ul className="navbar__links">

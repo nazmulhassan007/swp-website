@@ -24,9 +24,10 @@
   text-decoration: none;
 }
 
-.navbar__logo-svg {
-  width: 90px;
-  height: 57px;
+.navbar__logo-img {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ── Nav links ── */
